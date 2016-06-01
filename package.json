@@ -6,10 +6,14 @@
   "repository": "",
   "license": "Proprietary",
   "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --ignore node_modules shortly.js",
+    "test": "node server.js & ./node_modules/.bin/mocha --timeout 8000 --bail --reporter nyan test/ServerSpec.js; pkill -n node;"
+  },
   "dependencies": {
     "knex": "~0.5.7",
     "bookshelf": "~0.6.4",
-    "sqlite3": "~3.8.10",
+    "sqlite3": "~3.1.4",
     "express": "~3.4.8",
     "lodash": "~3.5.0",
     "express-partials": "~0.2.0",
