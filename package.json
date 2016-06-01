@@ -6,10 +6,6 @@
   "repository": "",
   "license": "Proprietary",
   "private": true,
-  "scripts": {
-    "start": "./node_modules/.bin/nodemon --ignore node_modules shortly.js",
-    "test": "node server.js & ./node_modules/.bin/mocha --timeout 8000 --bail --reporter nyan test/ServerSpec.js; pkill -n node;"
-  },
   "dependencies": {
     "knex": "~0.5.7",
     "bookshelf": "~0.6.4",
